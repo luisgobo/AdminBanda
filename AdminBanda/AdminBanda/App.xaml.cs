@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminBanda.MainPage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace AdminBanda
 			InitializeComponent();
 
             //MainPage = new AdminBanda.MainPage();
-            var mainPage = new MaestroDetallePage()
+            var mainPage = new ContenedorPrincipalPage()
             {
                 Title = "Administración de Banda"
             };

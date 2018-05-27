@@ -6,7 +6,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace AdminBanda.Usuario
+namespace AdminBanda.Usuarios
 {
 	public class ContenedorUsuarioPage :  ContentPage
     {

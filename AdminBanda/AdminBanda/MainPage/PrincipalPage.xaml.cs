@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-namespace AdminBanda
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace AdminBanda.MainPage
 {
-	public partial class MainPage : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class PrincipalPage : ContentPage
 	{
-		public MainPage()
+		public PrincipalPage()
 		{
-            InitializeComponent();
+			InitializeComponent ();
+
             Boton1.Clicked += async (sender, args) =>
             {
                 await DisplayAlert("Saludos", "Hola Xamarin.Forms!", "Cerrar");
@@ -20,13 +24,13 @@ namespace AdminBanda
 
             };
             boton2.Clicked += MostrarPantalla;
+
         }
 
         private async void MostrarPantalla(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new MainPage());
+            ////await Navigation.PushModalAsync(new MainPage());
             //await Navigation.PushAsync(new ContenedorPage());
         }
     }
-
 }

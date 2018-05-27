@@ -5,7 +5,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace AdminBanda.Instrumento
+namespace AdminBanda.Instrumentos
 {
 	public class ContenedorTipoInstPage : ContentPage
 	{
