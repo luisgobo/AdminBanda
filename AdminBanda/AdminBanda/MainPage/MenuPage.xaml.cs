@@ -10,11 +10,11 @@ namespace AdminBanda.MainPage
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage
     {
-        public ObservableCollection<Entidades.MenuItem> Menu { get; set; } = new ObservableCollection<Entidades.MenuItem>();
+        public ObservableCollection<ContentMenuItem> Menu { get; set; } = new ObservableCollection<ContentMenuItem>();
 
         public MenuPage()
         {
-            Menu = new ObservableCollection<Entidades.MenuItem>();
+            Menu = new ObservableCollection<ContentMenuItem>();
 
             InitializeComponent();
 
@@ -25,7 +25,7 @@ namespace AdminBanda.MainPage
 
         private void OnMenuSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var item = e.SelectedItem as Entidades.MenuItem;
+            var item = e.SelectedItem as ContentMenuItem;
             item?.Command.Execute(item);
         }
     }    

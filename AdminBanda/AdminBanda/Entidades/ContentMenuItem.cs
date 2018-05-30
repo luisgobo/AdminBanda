@@ -2,7 +2,7 @@
 
 namespace AdminBanda.Entidades
 {
-    public class MenuItem
+    public class ContentMenuItem
     {
         public string Icon { get; set; }
         public string Title { get; set; }

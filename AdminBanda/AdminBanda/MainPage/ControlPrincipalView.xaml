@@ -12,9 +12,7 @@
                 </Button.BackgroundColor>
             </Button>
 
-            <ActivityIndicator IsVisible="{Binding IsBusy}"
-                               IsRunning="{Binding IsBusy}" 
-                               />
+            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
             <ListView x:Name="listadoDatos"
                       IsPullToRefreshEnabled="True"
                       IsRefreshing="{Binding IsBusy}"

@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AdminBanda.MainPage.TabulacionPage"
-            xmlns:local="clr-namespace:AdminBanda.MainPage" >
+             x:Class="AdminBanda.MainPage.TabulacionPage">
     <TabbedPage.Children>
-        <local:PrincipalPage Title="Bienvenid@" Icon="icon" />
+        <!--<local:PrincipalPage Title="Bienvenid@" Icon="icon" />-->
 
-        <ContentPage Title="Titulo 2" Icon="icon">
+        <ContentPage Title="Intrumentos" Icon="icon">
             <ScrollView>
                 <StackLayout>
-                    <Label Text="Pantalla 2" />
-                    <Grid>
+                    <Label Text="Bienvenid@a la aplicacion de la Banda Cantonal de Heredia!" />
+                    <!--Grid-->
+                    <!--<Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition />
                             <RowDefinition />
@@ -28,14 +28,20 @@
                         <Button Grid.Row="1" Grid.Column="1" Text="2" />
                         <Button Grid.Row="2" Grid.Column="0" Text="3" />
                         <Button Grid.Row="2" Grid.Column="1" Text="4" />
-                    </Grid>
-                    <WebView x:Name="webview" Source="https://www.google.com" VerticalOptions="FillAndExpand" />
+                    </Grid>-->
+                    <!--Mostrar URL
+                    <WebView x:Name="webview" Source="https://www.google.com" VerticalOptions="FillAndExpand" />-->
                 </StackLayout>
             </ScrollView>
         </ContentPage>
 
-        <ContentPage Title="Titulo 3" Icon="icon">
-            <local:ControlPrincipalView />
+        <ContentPage Title="Editar" Icon="icon">
+            <!--<local:ControlPrincipalView />-->
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Editar Elemento" />
+                </StackLayout>
+            </ScrollView>
         </ContentPage>
 
         <!--<local:MapaPage Title="Mapas" />-->

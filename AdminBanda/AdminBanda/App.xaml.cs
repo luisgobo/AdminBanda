@@ -17,7 +17,7 @@ namespace AdminBanda
             //MainPage = new AdminBanda.MainPage();
             var mainPage = new ContenedorPrincipalPage()
             {
-                Title = "Administración de Banda"
+                Title = "Admin Banda"
             };
 
             MainPage = new NavigationPage(mainPage);

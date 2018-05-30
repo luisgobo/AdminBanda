@@ -29,6 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Instrumentos\ContenedorInstrumentoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Instrumentos\DetalleEdicionIntrumento.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="MainPage\ContenedorPrincipalPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

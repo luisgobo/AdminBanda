@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AdminBanda.MainPage.ContenedorPrincipalPage"
-                  xmlns:local="clr-namespace:AdminBanda.MainPage">
+             x:Class="AdminBanda.Instrumentos.ContenedorInstrumentoPage"
+             xmlns:local="clr-namespace:AdminBanda.Instrumentos">
     <MasterDetailPage.Detail>
-        <local:TabulacionPage />
+        <local:DetalleEdicionIntrumento />
     </MasterDetailPage.Detail>
 </MasterDetailPage>

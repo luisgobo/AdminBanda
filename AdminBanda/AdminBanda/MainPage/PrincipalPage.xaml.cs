@@ -16,14 +16,14 @@ namespace AdminBanda.MainPage
 		{
 			InitializeComponent ();
 
-            Boton1.Clicked += async (sender, args) =>
-            {
-                await DisplayAlert("Saludos", "Hola Xamarin.Forms!", "Cerrar");
+            //Boton1.Clicked += async (sender, args) =>
+            //{
+            //    await DisplayAlert("Saludos", "Hola Xamarin.Forms!", "Cerrar");
 
-                LabelSalida.Text = $"Fecha:{DatePickerFechaNacimiento.Date}";
+            //    LabelSalida.Text = $"Fecha:{DatePickerFechaNacimiento.Date}";
 
-            };
-            boton2.Clicked += MostrarPantalla;
+            //};
+            //boton2.Clicked += MostrarPantalla;
 
         }
 

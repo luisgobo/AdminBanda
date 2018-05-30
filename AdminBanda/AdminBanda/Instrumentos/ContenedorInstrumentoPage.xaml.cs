@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace AdminBanda.Instrumentos
 {
-	public class ContenedorInstrumentoPage : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class ContenedorInstrumentoPage
 	{
 		public ContenedorInstrumentoPage ()
 		{
-			Content = new StackLayout {
-				Children = {
-					new Label { Text = "Welcome to Xamarin.Forms!" }
-				}
-			};
+			InitializeComponent ();
 		}
 	}
 }
