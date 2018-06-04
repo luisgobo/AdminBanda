@@ -5,13 +5,6 @@
              BackgroundColor="{StaticResource ColorFondo}">
     <ContentView.Content>
         <StackLayout>
-            <!--<Button x:Name="botonAgregar" Text="Agregar">
-                <Button.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color"
-                                iOS="Blue" Android="Green" />
-                </Button.BackgroundColor>
-            </Button>-->
-
             <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
             <ListView x:Name="listadoInstrumentos"
                       IsPullToRefreshEnabled="True"
@@ -22,7 +15,7 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="icon" />
-                                <Label Text="{Binding Descripcion}" />
+                                <Label Text="{Binding NombreCompleto}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

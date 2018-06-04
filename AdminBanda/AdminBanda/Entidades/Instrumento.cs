@@ -9,6 +9,8 @@ namespace AdminBanda.Entidades
         string Codigo { set; get; }
         TipoInstrumento TipoInstruento { set; get; }
         int Propiedad { set; get; }
-        int Estado { set; get; }        
+        int Estado { set; get; }
+
+        string descripcionInstrumento { get { return TipoInstruento.Descripcion; } }
     }
 }

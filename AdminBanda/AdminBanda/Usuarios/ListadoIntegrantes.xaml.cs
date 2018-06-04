@@ -54,15 +54,6 @@ namespace AdminBanda.Usuarios
 
             await Task.Delay(2 * 1000);
             GetIntegrantes();
-
-            //Datos.Add(new Usuario { Nombre = "prueba 1" });
-            //Datos.Add(new Usuario { Nombre = "prueba 2" });
-            //Datos.Add(new Usuario { Nombre = "prueba 3" });
-
-            ////Task.WaitAll
-            ////Task.WaitAny
-
-            //listadoDatos.IsRefreshing = false;
         }
 
         private void Agregar()

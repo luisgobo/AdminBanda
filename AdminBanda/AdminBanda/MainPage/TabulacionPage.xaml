@@ -5,29 +5,7 @@
 
     <ScrollView>
         <StackLayout>
-            <Label Text="Bienvenid@a la aplicacion de la Banda Cantonal de Heredia!" />
-            <!--Grid-->
-            <!--<Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition />
-                            <RowDefinition />
-                            <RowDefinition />
-                        </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.50*" />
-                            <ColumnDefinition Width="0.50*" />
-                        </Grid.ColumnDefinitions>
-
-                        <Label Text="Escoja una opcion" Grid.ColumnSpan="2" />
-
-                        <Button Grid.Row="1" Grid.Column="0" Text="1" />
-                        <Button Grid.Row="1" Grid.Column="1" Text="2" />
-                        <Button Grid.Row="2" Grid.Column="0" Text="3" />
-                        <Button Grid.Row="2" Grid.Column="1" Text="4" />
-                    </Grid>-->
-            <!--Mostrar URL
-                    <WebView x:Name="webview" Source="https://www.google.com" VerticalOptions="FillAndExpand" />-->
+            <Label Text="Bienvenid@a la aplicacion de la Banda Cantonal de Heredia!" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Large"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

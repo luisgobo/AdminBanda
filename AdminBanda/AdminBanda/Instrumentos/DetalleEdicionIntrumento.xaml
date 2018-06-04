@@ -11,26 +11,24 @@
             <local:ListadoInstrumentos />
         </ContentPage>
 
-        <ContentPage Title="Edicion" x:Name="EdicionIntegrante" Icon="icon">
+        <ContentPage Title="Edicion" Icon="icon">
             <ScrollView>
-                <StackLayout>
-                    <StackLayout Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
-
-                        <Label>Cod. Instrmento</Label>
-                        <Entry Text="" Margin="10" FontSize="10" />
-                        <Entry Text="Descripcion" Margin="10" FontSize="10" />
-                        <Entry Text="Categoría" Margin="10" FontSize="10" />
-                        <Entry Text="Familia" Margin="10" FontSize="10" />
-                        <Entry Text="Asignado a:" Margin="10" FontSize="10" />
-                        <Entry Text="Estado" Margin="10" FontSize="10" />
-                        <DatePicker x:Name="DatePickerFechaNacimiento" />
-                        <!--
-                        <Button x:Name="Boton1" Text="Haga click">
-                        </Button>
-                        <Button x:Name="boton2" Text="Mostrar" />-->
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding Codigo}" FontSize="Medium" HorizontalOptions="FillAndExpand" />
                     </StackLayout>
-
-                    <Label x:Name="LabelSalida" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Cod.Integrante:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding descripcionInstrumento}" FontSize="Micro"  FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Identificación:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding Ppropiedad}" FontSize="Micro" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Estado:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding Estado}" FontSize="Micro" FontAttributes="Bold" />
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
         </ContentPage>

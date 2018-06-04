@@ -6,9 +6,9 @@ namespace AdminBanda.Entidades
 {
     public class TipoInstrumento
     {
-        string Codigo { set; get; }
-        string Descripcion { set; get; }
-        TipoInstrumento Seccion { set; get; }
-        bool estado { set; get; }
+        public string Codigo { set; get; }
+        public string Descripcion { set; get; }
+        public SeccionInstrumento Seccion { set; get; }
+        public bool estado { set; get; }
     }
 }

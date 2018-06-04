@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminBanda.Instrumentos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,14 @@ namespace AdminBanda.Usuarios
             InitializeComponent();
         }
 
-        async void OnNavigateButtonClicked(object sender, EventArgs e)
+        void OnNavigateButtonClicked(object sender, EventArgs e)
         {
-            //this.CurrentPage = this.Children[0];            
-            //await Navigation.PopAsync();
-            ////await Navigation.PopAsync(new ContenedorInstrumentoPage());
+            this.CurrentPage = this.Children[0];
+            //this.Navigation.PushModalAsync(new ListadoInstrumentos());
+        }
+
+        void OnCheckIntruments(object sender, EventArgs e) {
+
         }
     }
 }

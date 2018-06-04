@@ -41,19 +41,19 @@ namespace AdminBanda.MainPage
                 Command = new Command(() => Navegar(new ContenedorInstrumentoPage()))
             });            
 
-            paginaMenu.Menu.Add(new ContentMenuItem()
-            {
-                Icon = "",
-                Title = "Eventos",
-                Command = new Command(() => Navegar(new ContenedorEventoPage()))
-            });
+            //paginaMenu.Menu.Add(new ContentMenuItem()
+            //{
+            //    Icon = "",
+            //    Title = "Eventos",
+            //    Command = new Command(() => Navegar(new ContenedorEventoPage()))
+            //});
 
-            paginaMenu.Menu.Add(new ContentMenuItem()
-            {
-                Icon = "",
-                Title = "Asistencia",
-                Command = new Command(() => Navegar(new ContenedorAsistenciaPage()))
-            });
+            //paginaMenu.Menu.Add(new ContentMenuItem()
+            //{
+            //    Icon = "",
+            //    Title = "Asistencia",
+            //    Command = new Command(() => Navegar(new ContenedorAsistenciaPage()))
+            //});
 
             //Agregar Menu al maestro detalle
             Master = paginaMenu;

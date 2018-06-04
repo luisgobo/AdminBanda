@@ -4,7 +4,10 @@ using System.Text;
 
 namespace AdminBanda.Entidades
 {
-    class SeccionInstrumento
+    public class SeccionInstrumento
     {
+        public string Codigo { set; get; }
+        public string Descripcion { set; get; }        
+        public bool estado { set; get; }
     }
 }

@@ -135,5 +135,10 @@ namespace AdminBanda.Datos
 
             return listaDatos;
         }
+
+        public static ObservableCollection<Instrumento> obtenerInstrumentos() {
+            ObservableCollection<Instrumento> listaDatos = new ObservableCollection<Instrumento>();
+            return listaDatos;
+        }
     }
 }
