@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdminBanda.Usuarios.DetalleEdicionIntegrante"
+            xmlns:local="clr-namespace:AdminBanda.Usuarios"
+            Title="Integrantes">
+    <TabbedPage.Children>
+        <ContentPage Title="Listado" Icon="icon">
+            <local:ListadoIntegrantes />
+        </ContentPage>
+
+        <ContentPage Title="Edicion" Icon="icon">
+            <ScrollView>
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding NombreCompleto}" FontSize="Medium" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Cod.Integrante:" FontSize="Small" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding CodigoIntegrante}" FontSize="Small"  FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Identificación:" FontSize="Small" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding Identificacion}" FontSize="Small" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Tipo.Id:" FontSize="Small" HorizontalOptions="FillAndExpand" />
+                        <ListView x:Name="TipoIdList" />
+                        <Label Text="{Binding TipoIdentificacion}" FontSize="Small" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Nombre:" FontSize="Small" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding Nombre}" FontSize="Small" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Apellido 1:" FontSize="Small" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding Apellido1}" FontSize="Small" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Apellido 2:" FontSize="Small" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding Apellido2}" FontSize="Small" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Fecha.Nac:" FontSize="Small" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding FechaNacimiento, StringFormat='{}{0:dd-MMM-yyyy}'}" FontSize="Small" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Activ@:" FontSize="Small" HorizontalOptions="FillAndExpand" />
+                        <Switch IsToggled="{Binding Activo}" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="navigateButton" FontSize="Small" Text="Volver" Clicked="OnNavigateButtonClicked"/>
+                        <Button x:Name="ListaInstrumentos" FontSize="Small" Text="Instrumentos" Clicked="OnNavigateButtonClicked"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+
+        <!--<local:MapaPage Title="Mapas" />-->
+
+    </TabbedPage.Children>
+</TabbedPage>

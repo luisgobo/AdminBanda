@@ -1,16 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AdminBanda.MainPage.TabulacionPage">
-    <TabbedPage.Children>
-        <!--<local:PrincipalPage Title="Bienvenid@" Icon="icon" />-->
 
-        <ContentPage Title="Intrumentos" Icon="icon">
-            <ScrollView>
-                <StackLayout>
-                    <Label Text="Bienvenid@a la aplicacion de la Banda Cantonal de Heredia!" />
-                    <!--Grid-->
-                    <!--<Grid>
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Bienvenid@a la aplicacion de la Banda Cantonal de Heredia!" />
+            <!--Grid-->
+            <!--<Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition />
                             <RowDefinition />
@@ -29,22 +26,8 @@
                         <Button Grid.Row="2" Grid.Column="0" Text="3" />
                         <Button Grid.Row="2" Grid.Column="1" Text="4" />
                     </Grid>-->
-                    <!--Mostrar URL
+            <!--Mostrar URL
                     <WebView x:Name="webview" Source="https://www.google.com" VerticalOptions="FillAndExpand" />-->
-                </StackLayout>
-            </ScrollView>
-        </ContentPage>
-
-        <ContentPage Title="Editar" Icon="icon">
-            <!--<local:ControlPrincipalView />-->
-            <ScrollView>
-                <StackLayout>
-                    <Label Text="Editar Elemento" />
-                </StackLayout>
-            </ScrollView>
-        </ContentPage>
-
-        <!--<local:MapaPage Title="Mapas" />-->
-
-    </TabbedPage.Children>
-</TabbedPage>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

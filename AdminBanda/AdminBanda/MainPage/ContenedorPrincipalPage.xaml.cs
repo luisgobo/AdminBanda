@@ -29,7 +29,7 @@ namespace AdminBanda.MainPage
             {
                 Icon = "",
                 Title = "Integrantes",
-                Command = new Command(() => Navegar(new DetalleEdicionIntrumento()))
+                Command = new Command(() => Navegar(new DetalleEdicionIntegrante()))
             });
 
             paginaMenu.Menu.Add(new ContentMenuItem()

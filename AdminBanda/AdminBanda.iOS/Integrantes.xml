@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Integrantes>
+  <Integrante codigoIntegrante="1">
+    <Identificacion>401900152</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Luis</Nombre>
+    <Apellido1>Gonzalez</Apellido1>
+    <Apellido2>Bogantes</Apellido2>
+    <FechaNacimiento>29-01-1986</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="2">
+    <Identificacion>101200998</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Rodrigo</Nombre>
+    <Apellido1>Campos</Apellido1>
+    <Apellido2>Blanco</Apellido2>
+    <FechaNacimiento>15-10-1978</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="3">
+    <Identificacion>401900760</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Maria</Nombre>
+    <Apellido1>Miranda</Apellido1>
+    <Apellido2>Lopez</Apellido2>
+    <FechaNacimiento>01-01-1987</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="4">
+    <Identificacion>401820658</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Camilo</Nombre>
+    <Apellido1>Perez</Apellido1>
+    <Apellido2>Prado</Apellido2>
+    <FechaNacimiento>03-06-1982</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="5">
+    <Identificacion>102564568</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Lorena</Nombre>
+    <Apellido1>Rosales</Apellido1>
+    <Apellido2>Padilla</Apellido2>
+    <FechaNacimiento>20-02-1980</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="6">
+    <Identificacion>412005896</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Patricia</Nombre>
+    <Apellido1>Castro</Apellido1>
+    <Apellido2>Mora</Apellido2>
+    <FechaNacimiento>01-03-1996</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="7">
+    <Identificacion>41204240</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Claudio</Nombre>
+    <Apellido1>Araya</Apellido1>
+    <Apellido2>Lopez</Apellido2>
+    <FechaNacimiento>20-02-1980</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="8">
+    <Identificacion>401920568</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Pedro</Nombre>
+    <Apellido1>Peñaranda</Apellido1>
+    <Apellido2>Godines</Apellido2>
+    <FechaNacimiento>11-03-1988</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="9">
+    <Identificacion>103650465</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Leonardo</Nombre>
+    <Apellido1>Campos</Apellido1>
+    <Apellido2>Díaz</Apellido2>
+    <FechaNacimiento>01-01-1980</FechaNacimiento>
+  </Integrante>
+  <Integrante codigoIntegrante="10">
+    <Identificacion>401920565</Identificacion>
+    <TipoIdentificacion>1</TipoIdentificacion>
+    <Nombre>Pablo</Nombre>
+    <Apellido1>Escalante</Apellido1>
+    <Apellido2>Gómez</Apellido2>
+    <FechaNacimiento>23-10-1990</FechaNacimiento>
+  </Integrante>
+</Integrantes>
+

@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace AdminBanda.Instrumentos
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DetalleEdicionIntrumento
+	public partial class ListadoInstrumentos
 	{
-		public DetalleEdicionIntrumento ()
+		public ListadoInstrumentos ()
 		{
 			InitializeComponent ();
-		}        
-    }
+		}
+	}
 }
