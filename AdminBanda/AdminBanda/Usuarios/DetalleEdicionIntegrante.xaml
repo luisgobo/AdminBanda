@@ -17,31 +17,32 @@
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Cod.Integrante:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding CodigoIntegrante}" FontSize="Micro"  FontAttributes="Bold" />
+                        <Entry Text="{Binding CodigoIntegrante}" FontSize="Micro"  FontAttributes="Bold" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Identificación:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding Identificacion}" FontSize="Micro" FontAttributes="Bold" />
+                        <Entry Text="{Binding Identificacion}" FontSize="Micro" FontAttributes="Bold" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Tipo.Id:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding TipoIdentificacion}" FontSize="Micro" FontAttributes="Bold" />
+                        <Entry Text="{Binding TipoIdentificacion}" FontSize="Micro" FontAttributes="Bold" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Nombre:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding Nombre}" FontSize="Micro" FontAttributes="Bold" />
+                        <Entry Text="{Binding Nombre}" FontSize="Micro" FontAttributes="Bold"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Apellido 1:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding Apellido1}" FontSize="Micro" FontAttributes="Bold" />
+                        <Entry Text="{Binding Apellido1}" FontSize="Micro" FontAttributes="Bold" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Apellido 2:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding Apellido2}" FontSize="Micro" FontAttributes="Bold" />
+                        <Entry Text="{Binding Apellido2}" FontSize="Micro" FontAttributes="Bold" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Fecha.Nac:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
                         <Label Text="{Binding FechaNacimiento, StringFormat='{}{0:dd-MMM-yyyy}'}" FontSize="Micro" FontAttributes="Bold" />
+                        <!--<DatePicker Date="{Binding FechaNacimiento, StringFormat='{}{0:dd-MMM-yyyy}'}" FontSize="Micro" FontAttributes="Bold" />-->
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Activ@:" FontSize="Micro" HorizontalOptions="FillAndExpand" />

@@ -5,7 +5,6 @@
             xmlns:local="clr-namespace:AdminBanda.Instrumentos"
             Title="Intrumentos">
     <TabbedPage.Children>
-        <!--<local:PrincipalPage Title="Bienvenid@" Icon="icon" />-->
 
         <ContentPage Title="Listado" Icon="icon">
             <local:ListadoInstrumentos />
@@ -19,15 +18,15 @@
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Cod.Integrante:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding descripcionInstrumento}" FontSize="Micro"  FontAttributes="Bold" />
+                        <Entry Text="{Binding descripcionInstrumento}" FontSize="Micro"  FontAttributes="Bold" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Identificación:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding Ppropiedad}" FontSize="Micro" FontAttributes="Bold" />
+                        <Entry Text="{Binding Ppropiedad}" FontSize="Micro" FontAttributes="Bold" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Estado:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Label Text="{Binding Estado}" FontSize="Micro" FontAttributes="Bold" />
+                        <Entry Text="{Binding Estado}" FontSize="Micro" FontAttributes="Bold" />
                     </StackLayout>
                 </StackLayout>
             </ScrollView>
