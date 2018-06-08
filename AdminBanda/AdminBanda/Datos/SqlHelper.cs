@@ -17,6 +17,7 @@ namespace AdminBanda.Datos
             database = GetConnection();
             // create the tables
             database.CreateTable<Instrumento>();
+            database.CreateTable<Integrante>();
         }
         public SQLite.SQLiteConnection GetConnection()
         {
@@ -28,33 +29,39 @@ namespace AdminBanda.Datos
             return sqlitConnection;
         }
 
-        public IEnumerable<Instrumento> GetItems()
+        #region CRUD Intrumento
+
+        public IEnumerable<Instrumento> GetInstrumentos()
         {
             lock (locker)
             {
-                return (from i in database.Table<Instrumento>() select i).ToList();
+                var lista = (from i in database.Table<Instrumento>() select i).ToList();
+
+                if (lista.Count < 1)
+                {
+                    foreach (var item in GetData.obtenerIntegrantes())
+                    {
+
+                    }
+                }
+
+                return lista;
             }
         }
 
-        public Instrumento GetItem(string codInstrumento)
+        public Instrumento GetInstrumento(int codInstrumento)
         {
             lock (locker)
             {
-                return database.Table<Instrumento>().Where(x => x.Codigo == codInstrumento).FirstOrDefault();                
+                return database.Table<Instrumento>().FirstOrDefault(x => x.Codigo == codInstrumento);
             }
         }
-        public Instrumento GetItem(string userName, string passWord)
+
+        public int GuardarInstrumento(Instrumento item)
         {
             lock (locker)
             {
-                return database.Table<Instrumento>().FirstOrDefault(x => x.Codigo == passWord);
-            }
-        }
-        public int SaveItem(Instrumento item)
-        {
-            lock (locker)
-            {
-                if (item.Codigo != "")
+                if (item.Codigo != 0)
                 {
                     //Update Item
                     database.Update(item);
@@ -69,12 +76,73 @@ namespace AdminBanda.Datos
             }
         }
 
-        public int DeleteItem(int id)
+        public int DeleteInstrumento(int id)
         {
             lock (locker)
             {
                 return database.Delete<Instrumento>(id);
             }
         }
+        #endregion
+
+        #region CRUD Integrante
+
+        public IEnumerable<Integrante> GetIntegrantes()
+        {
+            lock (locker)
+            {
+                var lista = (from i in database.Table<Integrante>() select i).ToList();
+
+                if (lista.Count < 1)
+                {
+                    foreach (var item in GetData.obtenerIntegrantes())
+                    {
+                        GuardarIntegrante(item);
+                    }
+                }
+
+                lista = (from i in database.Table<Integrante>() select i).ToList();
+                return lista;
+            }
+        }
+
+        public Integrante GetIntegrante(int codInstrumento)
+        {
+            lock (locker)
+            {
+                return database.Table<Integrante>().FirstOrDefault(x => x.CodigoIntegrante == codInstrumento);
+            }
+        }
+
+        public int GuardarIntegrante(Integrante item)
+        {
+            lock (locker)
+            {
+                if (GetIntegrante(item.CodigoIntegrante) != null)
+                {
+                    //Update Item
+                    database.Update(item);
+                    return 1;
+                    //return item.Codigo;
+                }
+                else
+                {
+                    //Insert item
+                    return database.Insert(item);
+                }
+            }
+        }
+
+        public int DeleteIntegrante(int id)
+        {
+            lock (locker)
+            {
+                return database.Delete<Integrante>(id);
+            }
+        }
+        #endregion
+
+
+
     }
 }

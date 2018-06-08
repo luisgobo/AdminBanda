@@ -7,7 +7,8 @@ namespace AdminBanda.Entidades
         public Instrumento() { }
 
         [PrimaryKey, AutoIncrement]
-        public string Codigo { set; get; }
+        public int Codigo { set; get; }
+
         public int TipoInstruento { set; get; }
         public int Propiedad { set; get; }
         public int Estado { set; get; }

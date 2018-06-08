@@ -1,4 +1,5 @@
-﻿using AdminBanda.MainPage;
+﻿using AdminBanda.Datos;
+using AdminBanda.MainPage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace AdminBanda
 {
     public partial class App : Application
     {
+        static SqlHelper database;
         public App()
         {
             InitializeComponent();
@@ -24,6 +26,18 @@ namespace AdminBanda
             nav.BarBackgroundColor = Color.Black;
 
             MainPage = nav;
+        }
+
+        public static SqlHelper Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new SqlHelper();
+                }
+                return database;
+            }
         }
 
         protected override void OnStart()

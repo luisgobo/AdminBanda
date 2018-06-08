@@ -25,7 +25,7 @@ namespace AdminBanda.Usuarios
             InitializeComponent();
 
             BindingContext = this;
-
+            
             //Cargar Datos
             GetIntegrantes();
 
@@ -41,8 +41,8 @@ namespace AdminBanda.Usuarios
 
         public void GetIntegrantes()
         {            
-            ObservableCollection<Integrante> rawData =  GetData.obtenerIntegrantes();            
-            listadoIntegrantes.ItemsSource = rawData;
+            //ObservableCollection<Integrante> rawData = new ObservableCollection<Integrante>(App.Database.GetIntegrantes()); //GetData.obtenerIntegrantes();            
+            listadoIntegrantes.ItemsSource = new ObservableCollection<Integrante>(App.Database.GetIntegrantes());
         }
 
         public Command RefrescarCommand { get; set; }
