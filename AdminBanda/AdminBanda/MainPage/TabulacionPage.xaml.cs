@@ -14,6 +14,8 @@ namespace AdminBanda.MainPage
 		public TabulacionPage ()
 		{
 			InitializeComponent ();
+
+            LogoBanda.Source = "logoBanda.png";
 		}
 	}
 }

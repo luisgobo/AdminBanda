@@ -8,34 +8,37 @@ using Xamarin.Forms;
 
 namespace AdminBanda
 {
-	public partial class App : Application
-	{
-		public App ()
-		{
-			InitializeComponent();
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
 
             //MainPage = new AdminBanda.MainPage();
             var mainPage = new ContenedorPrincipalPage()
             {
-                Title = "Admin Banda"
+                Title = "Banda Movil",
             };
 
-            MainPage = new NavigationPage(mainPage);
+            NavigationPage nav = new NavigationPage(mainPage);
+            nav.BarBackgroundColor = Color.Black;
+
+            MainPage = nav;
         }
 
-		protected override void OnStart ()
-		{
-			// Handle when your app starts
-		}
+        protected override void OnStart()
+        {
+            // Handle when your app starts
+        }
 
-		protected override void OnSleep ()
-		{
-			// Handle when your app sleeps
-		}
+        protected override void OnSleep()
+        {
+            // Handle when your app sleeps
+        }
 
-		protected override void OnResume ()
-		{
-			// Handle when your app resumes
-		}
-	}
+        protected override void OnResume()
+        {
+            // Handle when your app resumes
+        }
+    }
 }

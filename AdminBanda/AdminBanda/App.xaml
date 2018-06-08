@@ -7,6 +7,8 @@
 		<!-- Application resource dictionary -->
         <ResourceDictionary>
             <Color x:Key="ColorFondo">LightGray</Color>
+            <Color x:Key="ColorEncabezado">#ffc107</Color>
+            
         </ResourceDictionary>
 
     </Application.Resources>

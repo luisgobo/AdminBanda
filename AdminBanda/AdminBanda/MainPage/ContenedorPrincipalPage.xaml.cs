@@ -20,14 +20,14 @@ namespace AdminBanda.MainPage
             paginaMenu.Title = "Opciones";
             paginaMenu.Menu.Add(new Entidades.ContentMenuItem()
             {
-                Icon = "",
+                Icon = "ic_Principal.png",
                 Title = "Inicio",
                 Command = new Command(() => Navegar(new ContenedorPrincipalPage()))
             });
 
             paginaMenu.Menu.Add(new ContentMenuItem()
             {
-                Icon = "",
+                Icon = "ic_Integrante.png",
                 Title = "Integrantes",
                 Command = new Command(() => Navegar(new DetalleEdicionIntegrante()))
             });
@@ -35,7 +35,7 @@ namespace AdminBanda.MainPage
             paginaMenu.Menu.Add(new ContentMenuItem()
             {
 
-                Icon = "",
+                Icon = "ic_NotaMusical.png",
                 Title = "Instrumentos",
                 //Command = new Command(() => Navegar(new ContenedorPrincipalPage()))
                 Command = new Command(() => Navegar(new ContenedorInstrumentoPage()))

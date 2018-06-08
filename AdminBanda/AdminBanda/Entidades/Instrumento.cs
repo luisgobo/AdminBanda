@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SQLite;
 
 namespace AdminBanda.Entidades
 {
     public class Instrumento
     {
-        string Codigo { set; get; }
-        TipoInstrumento TipoInstruento { set; get; }
-        int Propiedad { set; get; }
-        int Estado { set; get; }
+        public Instrumento() { }
 
-        string descripcionInstrumento { get { return TipoInstruento.Descripcion; } }
+        [PrimaryKey, AutoIncrement]
+        public string Codigo { set; get; }
+        public int TipoInstruento { set; get; }
+        public int Propiedad { set; get; }
+        public int Estado { set; get; }
+
+        //string descripcionInstrumento { get { return TipoInstruento.Descripcion; } }
     }
 }
