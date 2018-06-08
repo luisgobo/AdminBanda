@@ -28,17 +28,15 @@ namespace AdminBanda.MainPage
             paginaMenu.Menu.Add(new ContentMenuItem()
             {
                 Icon = "ic_Integrante.png",
-                Title = "Integrantes",
+                Title = "Integrantes",                
                 Command = new Command(() => Navegar(new DetalleEdicionIntegrante()))
             });
 
             paginaMenu.Menu.Add(new ContentMenuItem()
             {
-
                 Icon = "ic_NotaMusical.png",
-                Title = "Instrumentos",
-                //Command = new Command(() => Navegar(new ContenedorPrincipalPage()))
-                Command = new Command(() => Navegar(new ContenedorInstrumentoPage()))
+                Title = "Instrumentos",                
+                Command = new Command(() => Navegar(new DetalleEdicionIntrumento()))
             });            
 
             //paginaMenu.Menu.Add(new ContentMenuItem()

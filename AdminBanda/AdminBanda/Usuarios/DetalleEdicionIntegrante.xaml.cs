@@ -15,14 +15,14 @@ namespace AdminBanda.Usuarios
     {
 
         public DetalleEdicionIntegrante()
-        {
+        {            
             InitializeComponent();
+            
         }
 
         void OnNavigateButtonClicked(object sender, EventArgs e)
         {
-            this.CurrentPage = this.Children[0];
-            //this.Navigation.PushModalAsync(new ListadoInstrumentos());
+            this.CurrentPage = this.Children[0];            
         }
 
         void OnCheckIntruments(object sender, EventArgs e) {

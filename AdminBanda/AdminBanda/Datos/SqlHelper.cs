@@ -39,12 +39,13 @@ namespace AdminBanda.Datos
 
                 if (lista.Count < 1)
                 {
-                    foreach (var item in GetData.obtenerIntegrantes())
+                    foreach (var item in GetData.obtenerInstrumentos())
                     {
-
+                        GuardarInstrumento(item);
                     }
                 }
 
+                lista = (from i in database.Table<Instrumento>() select i).ToList();
                 return lista;
             }
         }
@@ -61,12 +62,11 @@ namespace AdminBanda.Datos
         {
             lock (locker)
             {
-                if (item.Codigo != 0)
+                if (GetInstrumento(item.Codigo) != null)
                 {
                     //Update Item
                     database.Update(item);
-                    return 1;
-                    //return item.Codigo;
+                    return 1;                    
                 }
                 else
                 {
@@ -106,11 +106,11 @@ namespace AdminBanda.Datos
             }
         }
 
-        public Integrante GetIntegrante(int codInstrumento)
+        public Integrante GetIntegrante(int codIntegrante)
         {
             lock (locker)
             {
-                return database.Table<Integrante>().FirstOrDefault(x => x.CodigoIntegrante == codInstrumento);
+                return database.Table<Integrante>().FirstOrDefault(x => x.CodigoIntegrante == codIntegrante);
             }
         }
 
@@ -122,8 +122,7 @@ namespace AdminBanda.Datos
                 {
                     //Update Item
                     database.Update(item);
-                    return 1;
-                    //return item.Codigo;
+                    return 1;                    
                 }
                 else
                 {

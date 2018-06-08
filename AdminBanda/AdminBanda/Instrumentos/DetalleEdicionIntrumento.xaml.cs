@@ -15,6 +15,16 @@ namespace AdminBanda.Instrumentos
 		public DetalleEdicionIntrumento ()
 		{
 			InitializeComponent ();
-		}        
+		}
+
+        void OnNavigateButtonClicked(object sender, EventArgs e)
+        {
+            this.CurrentPage = this.Children[0];
+        }
+
+        void OnCheckIntruments(object sender, EventArgs e)
+        {
+
+        }
     }
 }

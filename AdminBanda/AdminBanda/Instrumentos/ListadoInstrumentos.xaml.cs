@@ -1,22 +1,17 @@
 ﻿using AdminBanda.Datos;
 using AdminBanda.Entidades;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace AdminBanda.Instrumentos
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ListadoInstrumentos
-	{
-		public ListadoInstrumentos ()
-		{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ListadoInstrumentos
+    {
+        public ListadoInstrumentos()
+        {
             RefrescarCommand = new Command(obj => Refrescar());
 
             InitializeComponent();
@@ -33,13 +28,12 @@ namespace AdminBanda.Instrumentos
                 var masterPage = this.Parent.Parent as TabbedPage;
                 masterPage.CurrentPage = masterPage.Children[1];
                 masterPage.BindingContext = elementoSeleccionado;
-            };           
-        }       
+            };
+        }
 
         public void GetInstrumentos()
         {
-            ObservableCollection<Instrumento> rawData = GetData.obtenerInstrumentos();
-            listadoInstrumentos.ItemsSource = rawData;
+            listadoInstrumentos.ItemsSource = new ObservableCollection<Instrumento>(App.Database.GetInstrumentos());
         }
 
         public Command RefrescarCommand { get; set; }
@@ -51,7 +45,6 @@ namespace AdminBanda.Instrumentos
 
             await Task.Delay(2 * 1000);
             GetInstrumentos();
-            
         }
 
         private void Agregar()

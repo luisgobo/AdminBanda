@@ -11,8 +11,7 @@ namespace AdminBanda.Datos
         public static ObservableCollection<Integrante> obtenerIntegrantes()
         {
 
-            ObservableCollection<Integrante> listaDatos = new ObservableCollection<Integrante>();
-            var tests = 0;
+            ObservableCollection<Integrante> listaDatos = new ObservableCollection<Integrante>();            
 
             listaDatos.Add(new Integrante
             {
@@ -138,7 +137,71 @@ namespace AdminBanda.Datos
         }
 
         public static ObservableCollection<Instrumento> obtenerInstrumentos() {
-            ObservableCollection<Instrumento> listaDatos = new ObservableCollection<Instrumento>();
+            ObservableCollection<Instrumento> listaDatos = new ObservableCollection<Instrumento>();            
+
+            listaDatos.Add(new Instrumento
+            {
+                Codigo = 1,
+                DescripcionInstrumento = "Caja de Marcha",
+                TipoInstruento = 1,
+                Propiedad = 1,
+                Estado = 1,
+            });
+
+            listaDatos.Add(new Instrumento
+            {
+                Codigo = 2,
+                DescripcionInstrumento = "Caja de Marcha",
+                TipoInstruento = 1,
+                Propiedad = 1,
+                Estado = 1,
+            });
+
+            listaDatos.Add(new Instrumento
+            {
+                Codigo = 3,
+                DescripcionInstrumento = "Lira Jumbo",
+                TipoInstruento = 2,
+                Propiedad = 2,
+                Estado = 1,
+            });
+
+            listaDatos.Add(new Instrumento
+            {
+                Codigo = 4,
+                DescripcionInstrumento = "Tambor Tenor",
+                TipoInstruento = 3,
+                Propiedad = 1,
+                Estado = 1,
+            });
+
+            listaDatos.Add(new Instrumento
+            {
+                Codigo = 5,
+                DescripcionInstrumento = "Trompeta",
+                TipoInstruento = 10,
+                Propiedad = 4,
+                Estado = 1,
+            });
+
+            listaDatos.Add(new Instrumento
+            {
+                Codigo = 6,
+                DescripcionInstrumento = "Saxofon",
+                TipoInstruento = 11,
+                Propiedad = 3,
+                Estado = 1,
+            });
+
+            listaDatos.Add(new Instrumento
+            {
+                Codigo = 7,
+                DescripcionInstrumento = "Sasofon Varitono",
+                TipoInstruento = 11,
+                Propiedad = 3,
+                Estado = 1,
+            });
+
             return listaDatos;
         }
     }

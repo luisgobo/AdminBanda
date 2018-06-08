@@ -4,7 +4,9 @@
              x:Class="AdminBanda.Usuarios.DetalleEdicionIntegrante"
             xmlns:local="clr-namespace:AdminBanda.Usuarios"
             Title="Integrantes"
-            BackgroundColor="{StaticResource ColorEncabezado}">
+            BarTextColor="White"
+            BarBackgroundColor="Black">
+
     <TabbedPage.Children>
         <ContentPage Title="Listado" Icon="ic_Listado">
             <local:ListadoIntegrantes />
@@ -53,7 +55,7 @@
                         <Button x:Name="navigateButton" FontSize="Micro" Text="Volver" Clicked="OnNavigateButtonClicked"/>
                         <Button x:Name="ListaInstrumentos" FontSize="Micro" Text="Instrumentos" Clicked="OnCheckIntruments"/>
                     </StackLayout>
-                    
+
                 </StackLayout>
             </ScrollView>
         </ContentPage>

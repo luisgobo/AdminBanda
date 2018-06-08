@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AdminBanda.Instrumentos.DetalleEdicionIntrumento"
             xmlns:local="clr-namespace:AdminBanda.Instrumentos"
-            Title="Intrumentos"            
-            BackgroundColor="{StaticResource ColorEncabezado}">
+            Title="Intrumentos"        
+            BarTextColor="White"
+            BarBackgroundColor="Black">
     <TabbedPage.Children>
 
         <ContentPage Title="Listado" Icon="ic_Listado">
@@ -15,25 +16,29 @@
             <ScrollView>
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding Codigo}" FontSize="Medium" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding DescripcionInstrumento}" FontSize="Medium" HorizontalOptions="FillAndExpand" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Cod.Integrante:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Entry Text="{Binding descripcionInstrumento}" FontSize="Micro"  FontAttributes="Bold" />
+                        <Label Text="Codigo:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
+                        <Label Text="{Binding Codigo}" FontSize="Micro"  FontAttributes="Bold" />
                     </StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Identificación:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Entry Text="{Binding Ppropiedad}" FontSize="Micro" FontAttributes="Bold" />
+                    <StackLayout>
+                        <Label Text="Tipo de Instrumento:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
+                        <Entry Text="{Binding TipoInstruento}" FontSize="Micro" FontAttributes="Bold" />
                     </StackLayout>
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout >
+                        <Label Text="Propiedad:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
+                        <Entry Text="{Binding Propiedad}" FontSize="Micro" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout >
                         <Label Text="Estado:" FontSize="Micro" HorizontalOptions="FillAndExpand" />
-                        <Entry Text="{Binding Estado}" FontSize="Micro" FontAttributes="Bold" />
+                        <Entry Text="{Binding Estado}" FontSize="Micro" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="navigateButton" FontSize="Micro" Text="Volver" Clicked="OnNavigateButtonClicked"/>
                     </StackLayout>
                 </StackLayout>
             </ScrollView>
         </ContentPage>
-
-        <!--<local:MapaPage Title="Mapas" />-->
-
     </TabbedPage.Children>
 </TabbedPage>

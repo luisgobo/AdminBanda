@@ -1,15 +1,6 @@
-﻿using AdminBanda.Datos;
-using AdminBanda.Entidades;
-using System;
-using System.Collections.Generic;
+﻿using AdminBanda.Entidades;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Reflection;
 using System.Threading.Tasks;
-using System.Xml.Linq;
-using System.Xml.Serialization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,7 +16,7 @@ namespace AdminBanda.Usuarios
             InitializeComponent();
 
             BindingContext = this;
-            
+
             //Cargar Datos
             GetIntegrantes();
 
@@ -33,7 +24,7 @@ namespace AdminBanda.Usuarios
             {
                 var elementoSeleccionado = listadoIntegrantes.SelectedItem as Integrante;
                 //var contenedor = this.Parent.Parent as TabbedPage;
-                var masterPage = this.Parent.Parent as TabbedPage;            
+                var masterPage = this.Parent.Parent as TabbedPage;
                 masterPage.CurrentPage = masterPage.Children[1];
                 masterPage.BindingContext = elementoSeleccionado;
             };
@@ -41,7 +32,6 @@ namespace AdminBanda.Usuarios
 
         public void GetIntegrantes()
         {            
-            //ObservableCollection<Integrante> rawData = new ObservableCollection<Integrante>(App.Database.GetIntegrantes()); //GetData.obtenerIntegrantes();            
             listadoIntegrantes.ItemsSource = new ObservableCollection<Integrante>(App.Database.GetIntegrantes());
         }
 
