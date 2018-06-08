@@ -12,6 +12,7 @@ namespace AdminBanda.Datos
         {
 
             ObservableCollection<Integrante> listaDatos = new ObservableCollection<Integrante>();
+            var tests = 0;
 
             listaDatos.Add(new Integrante
             {
