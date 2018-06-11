@@ -7,9 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminBanda.Android", "Admin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminBanda.iOS", "AdminBanda\AdminBanda.iOS\AdminBanda.iOS.csproj", "{ECB7958F-49C1-4AA9-815C-61D561CE948B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminBanda", "AdminBanda\AdminBanda\AdminBanda.csproj", "{FC81C452-BCAB-4DDC-935C-F3F2C1EEF023}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminBanda", "AdminBanda\AdminBanda\AdminBanda.csproj", "{FC81C452-BCAB-4DDC-935C-F3F2C1EEF023}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{75629BBC-2280-4356-B774-CE1C044DACF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modelos", "Modelos\Modelos.csproj", "{75629BBC-2280-4356-B774-CE1C044DACF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentacion", "Documentacion", "{6B3E9A42-D011-42AE-AB60-396EC56E2951}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

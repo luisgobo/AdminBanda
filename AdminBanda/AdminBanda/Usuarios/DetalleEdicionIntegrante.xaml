@@ -53,14 +53,10 @@
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Button x:Name="navigateButton" FontSize="Micro" Text="Volver" Clicked="OnNavigateButtonClicked"/>
-                        <Button x:Name="ListaInstrumentos" FontSize="Micro" Text="Instrumentos" Clicked="OnCheckIntruments"/>
+                        <Button x:Name="ListaInstrumentos" FontSize="Micro" Text="Instrumentos" Clicked="OnCheckIntruments" />
                     </StackLayout>
-
                 </StackLayout>
             </ScrollView>
         </ContentPage>
-
-        <!--<local:MapaPage Title="Mapas" />-->
-
     </TabbedPage.Children>
 </TabbedPage>
